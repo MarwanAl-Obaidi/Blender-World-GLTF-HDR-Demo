@@ -45,6 +45,8 @@
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+        const arr = ['Grid', 'Plane'];
+
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setClearColor("rgb(1,84,184,184)");
@@ -166,6 +168,12 @@
                 controller.userData.selected = object;
             }
 
+            if (!arr.includes(object.name)) {
+                //console.log('picked an object');
+                object.material.emissive.b = 1;
+                controller.attach(object);
+            }
+
         }
 
         function onSelectEnd(event) {
@@ -187,6 +195,11 @@
 
             //return raycaster.intersectObjects(group.children, false);
             return raycaster.intersectObjects(group.children, true);
+
+            if (!arr.includes(object.name)) {
+                //console.log('picked an object');
+                object.material.emissive.r = 1;
+            }
         }
 
         function intersectObjects(controller) {

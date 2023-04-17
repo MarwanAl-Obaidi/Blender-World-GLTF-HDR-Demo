@@ -161,17 +161,13 @@
             if (intersections.length > 0) {
                 const intersection = intersections[0];
 
-                const object = intersection.object;
-                object.material.emissive.b = 1;
-                controller.attach(object);
+                if (!arr.includes(object.name)) {
+                    //console.log('picked an object');
+                    object.material.emissive.b = 1;
+                    controller.attach(object);
+                }
 
                 controller.userData.selected = object;
-            }
-
-            if (!arr.includes(object.name)) {
-                //console.log('picked an object');
-                object.material.emissive.b = 1;
-                controller.attach(object);
             }
 
         }

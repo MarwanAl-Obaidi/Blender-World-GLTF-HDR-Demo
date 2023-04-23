@@ -180,15 +180,28 @@
             const model = gltf.scene.children[0];
 
             modelObject.position.x = 3;
-            modelObject.position.y = 3;
+            modelObject.position.y = 1;
+            modelObject.position.z = 2;
 
-            scene.add(modelObject);
+            //scene.add(modelObject);
 
             const mixer = new THREE.AnimationMixer(modelObject);
 
+            const clips = modelObject.animations;
+
+            function update() {
+                mixer.update(deltaSeconds);
+            }
+
+            clips.forEach(function (clip) {
+                mixer.clipAction(clip).play();
+            });
+
+            scene.add(modelObject);
+
             console.log(mixer);
 
-            const clips = gltf.animations || [];
+            //const clips = gltf.animations || [];
 
             console.log(clips);
         });

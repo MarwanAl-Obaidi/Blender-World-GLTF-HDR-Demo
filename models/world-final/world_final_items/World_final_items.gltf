@@ -1,0 +1,288 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Bird_2",
+            "rotation" : [
+                0.15380112826824188,
+                -0.1538010835647583,
+                -0.6901777982711792,
+                0.6901776194572449
+            ],
+            "scale" : [
+                0.49447712302207947,
+                0.49447712302207947,
+                0.4944770336151123
+            ],
+            "translation" : [
+                10.468029022216797,
+                5.104236125946045,
+                1.2335069179534912
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Chest",
+            "rotation" : [
+                0,
+                -0.9935413599014282,
+                0,
+                0.11347053200006485
+            ],
+            "scale" : [
+                1.7365069389343262,
+                1.7365061044692993,
+                1.7365065813064575
+            ],
+            "translation" : [
+                2.5261919498443604,
+                0.346155047416687,
+                -3.2130980491638184
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Bird",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "normalTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 3
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cylinder.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "animal_avian_beak_bird_feathers_",
+            "uri" : "animal_avian_beak_bird_feathers_.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Chest_Normal",
+            "uri" : "Chest_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Chest_BaseColor",
+            "uri" : "Chest_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Chest_Metallic.png-Chest_Roughness.png",
+            "uri" : "Chest_Metallic_png-Chest_Roughness_png.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4940,
+            "max" : [
+                4.728290557861328,
+                1.4947891235351562,
+                2.9860682487487793
+            ],
+            "min" : [
+                -4.326450347900391,
+                -1.4947890043258667,
+                -8.222883224487305
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4940,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4940,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 22173,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 9118,
+            "max" : [
+                0.3008255660533905,
+                0.6496319770812988,
+                0.42797958850860596
+            ],
+            "min" : [
+                -0.2717913091182709,
+                6.751558316864248e-07,
+                -0.42764797806739807
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 9118,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 9118,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 13446,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 59280,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 39520,
+            "byteOffset" : 59280,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 59280,
+            "byteOffset" : 98800,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44346,
+            "byteOffset" : 158080,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 109416,
+            "byteOffset" : 202428,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72944,
+            "byteOffset" : 311844,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 109416,
+            "byteOffset" : 384788,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 26892,
+            "byteOffset" : 494204,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 521096,
+            "uri" : "World_final_items.bin"
+        }
+    ]
+}

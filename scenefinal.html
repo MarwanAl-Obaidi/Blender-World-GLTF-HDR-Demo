@@ -198,10 +198,10 @@
             mixer = new THREE.AnimationMixer(modelObject);
             const clips = gltf.animations;
 
-            const clip = THREE.AnimationClip.findByName( clips, 'Action' );
+            const clip = THREE.AnimationClip.findByName(clips, 'Action');
 
             clips.forEach(function (clip) {
-               mixer.clipAction(clip).play();
+                mixer.clipAction(clip).play();
             });
 
             console.log(mixer);
@@ -209,6 +209,21 @@
             //const clips = gltf.animations || [];
 
             console.log(clips);
+        });
+
+        const loader8 = new GLTFLoader().setPath('models/starbucks/');
+        loader8.load('Starbucks.gltf', function (gltf) {
+            const modelObject = gltf.scene;
+            const model = gltf.scene.children[0];
+
+            modelObject.position.x = -5;
+            modelObject.position.y = 0;
+            modelObject.position.z = 10;
+
+            //scene.add(modelObject);
+
+            scene.add(modelObject);
+
         });
 
         const controllerModelFactory = new XRControllerModelFactory();
